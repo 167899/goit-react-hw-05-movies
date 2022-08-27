@@ -1,5 +1,8 @@
 # goit-react-hw-05-movies
 
+Документация
+Our primary documentation is located at developers.themoviedb.org.
+
 Ключ API (v3 auth)
 59483ef1407ef779ba79a4ef6c1e5236
 
