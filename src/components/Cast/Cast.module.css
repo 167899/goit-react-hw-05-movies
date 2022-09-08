@@ -1,0 +1,21 @@
+.castList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.castItem {
+  width: 160px;
+  display: block;
+  margin: 20px;
+  font-size: 18px;
+}
+.castItem img {
+  width: 160px;
+}
+
+.imgBlock {
+  height: 240px;
+  background-color: #d1eaeb;
+  margin: auto;
+}

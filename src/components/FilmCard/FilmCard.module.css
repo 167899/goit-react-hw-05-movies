@@ -1,0 +1,23 @@
+.filmCart{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.content{
+  margin-left: 40px;
+}
+
+.genresList{
+  display: flex;
+  padding: 0;
+}
+
+.genresList li{
+  display: block;
+  margin-right: 10px;
+}
+.linkBack{
+  text-decoration: none;
+}
