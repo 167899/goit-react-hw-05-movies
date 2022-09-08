@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { getMovieCredits } from 'services/api';
 import css from './Cast.module.css';
 
-// import PropTypes from 'prop-types';
-
 export const Cast = () => {
   const { movieId } = useParams();
 

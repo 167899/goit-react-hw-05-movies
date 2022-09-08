@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { FilmList } from 'components/FilmsList/FilmList';

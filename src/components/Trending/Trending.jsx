@@ -3,16 +3,13 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { getTrendingList } from 'services/api';
 import css from './Trending.module.css';
-// import PropTypes from 'prop-types';
 
 export const Trending = () => {
-  
-   const [films, setFilms] = useState([]);
+  const [films, setFilms] = useState([]);
 
   useEffect(() => {
     getTrendingList().then(data => setFilms(data.data.results));
   }, []);
-
 
   return (
     <div className={css.trending}>

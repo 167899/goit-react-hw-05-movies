@@ -7,17 +7,11 @@ import { useLocation } from 'react-router-dom';
 import { getMovieDetails } from 'services/api';
 import css from './FilmCard.module.css';
 
-// import PropTypes from 'prop-types';
-
 export const FilmCard = () => {
   const { movieId } = useParams();
-
   const [filmCard, setFilmCard] = useState(null);
-
   const [img, setImg] = useState({});
-
   let location = useLocation();
-
   const backLinkHref = location.state?.from ?? '/';
 
   useEffect(() => {

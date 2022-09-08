@@ -1,8 +1,6 @@
-import {NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 import css from './NavItems.module.css';
-
-// import PropTypes from 'prop-types';
 
 const navItems = [
   { href: '', text: 'Home' },

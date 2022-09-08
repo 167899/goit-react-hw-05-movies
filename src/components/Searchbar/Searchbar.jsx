@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-
 import { IoMdSearch } from 'react-icons/io';
-
 import styles from './Searchbar.module.css';
 
-export const Searchbar = ({ onSubmit, name, onChange}) => {
+export const Searchbar = ({ onSubmit, name, onChange }) => {
   return (
     <div className={styles.searchbar}>
       <form onSubmit={onSubmit} className={styles.form}>
@@ -23,7 +21,6 @@ export const Searchbar = ({ onSubmit, name, onChange}) => {
           onChange={onChange}
         />
       </form>
- 
     </div>
   );
 };
