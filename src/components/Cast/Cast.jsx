@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { getMovieCredits } from 'services/api';
 import css from './Cast.module.css';
 
-export const Cast = () => {
+const Cast = () => {
   const { movieId } = useParams();
 
   const [cast, setCast] = useState([]);
@@ -24,7 +24,7 @@ export const Cast = () => {
               <img
                 src={element.profile_path ?
                   `https://image.tmdb.org/t/p/w342/${element.profile_path}`
-                  : '#'}
+                  : ''}
                 alt={element.original_name}
               />
             </div>
@@ -36,3 +36,5 @@ export const Cast = () => {
     </>
   );
 };
+
+export default Cast;

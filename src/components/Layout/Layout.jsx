@@ -1,15 +1,20 @@
 import { Header } from '../Header/Header';
 import { Outlet } from 'react-router-dom';
+import { Suspense } from "react";
 import css from './Layout.module.css'
 
-export const Layout = () => {
+const Layout = () => {
 
   return (
     <div
       className={css.layout}
     >
       <Header />
-      <Outlet/>
+      <Suspense fallback={<div>Loading page...</div>}>
+        <Outlet />
+      </Suspense>
     </div>
   );
 };
+
+export default Layout;

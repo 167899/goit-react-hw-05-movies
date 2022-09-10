@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { getTrendingList } from 'services/api';
 import css from './Trending.module.css';
 
-export const Trending = () => {
+const Trending = () => {
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
@@ -18,3 +18,5 @@ export const Trending = () => {
     </div>
   );
 };
+
+export default Trending;

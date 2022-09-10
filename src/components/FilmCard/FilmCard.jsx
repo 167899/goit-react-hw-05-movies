@@ -1,13 +1,12 @@
 import { Button } from 'components/Button/Buttun';
 import { Outlet, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getMovieDetails } from 'services/api';
 import css from './FilmCard.module.css';
 
-export const FilmCard = () => {
+const FilmCard = () => {
   const { movieId } = useParams();
   const [filmCard, setFilmCard] = useState(null);
   const [img, setImg] = useState({});
@@ -72,7 +71,11 @@ export const FilmCard = () => {
           </Link>
         </li>
       </ul>
-      <Outlet />
+      <Suspense>
+        <Outlet />
+      </Suspense>
     </>
   );
 };
+
+export default FilmCard;

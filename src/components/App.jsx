@@ -1,13 +1,27 @@
 import { Route, Routes } from 'react-router-dom';
+import { lazy } from 'react';
 
-import { Layout } from './Layout/Layout';
-import { Trending } from './Trending/Trending';
-import { Movies } from './Movies/Movies';
-import { FilmCard } from './FilmCard/FilmCard';
-import { Reviews } from './Reviews/Reviews';
-import { Cast } from './Cast/Cast';
+import Layout from './Layout/Layout';
+import Trending from './Trending/Trending';
+// import  Movies from './Movies/Movies';
+// import FilmCard from './FilmCard/FilmCard';
+// import Reviews from './Reviews/Reviews';
+// import Cast from './Cast/Cast';
 
 import css from './App.module.css';
+
+const Movies = lazy(() => {
+  import('./Movies/Movies');
+});
+const FilmCard = lazy(() => {
+  import('./FilmCard/FilmCard');
+});
+const Cast = lazy(() => {
+  import('./Cast/Cast');
+});
+const Reviews = lazy(() => {
+  import('./Reviews/Reviews');
+});
 
 export const App = () => {
   return (

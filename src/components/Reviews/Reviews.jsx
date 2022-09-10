@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { getMovieReviews } from 'services/api';
 import css from './Reviews.module.css';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
 
@@ -31,3 +31,5 @@ export const Reviews = () => {
     </>
   );
 };
+
+export default Reviews;
