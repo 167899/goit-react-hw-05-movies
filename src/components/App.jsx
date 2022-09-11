@@ -1,24 +1,24 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 
-import Layout from './Layout/Layout';
+import Layout from '../pages/Layout/Layout';
 
 import css from './App.module.css';
 
 const Trending = lazy(() => (
-  import('./Trending/Trending')
+  import('../pages/Trending/Trending')
 ));
 const Movies = lazy(() => (
-  import('./Movies/Movies')
+  import('../pages/Movies/Movies')
 ));
 const FilmCard = lazy(() => (
-  import('./FilmCard/FilmCard')
+  import('../pages/FilmCard/FilmCard')
 ));
 const Cast = lazy(() => (
-  import('./Cast/Cast')
+  import('../pages/Cast/Cast')
 ));
 const Reviews = lazy(() => (
-  import('./Reviews/Reviews')
+  import('../pages/Reviews/Reviews')
 ));
 
 export const App = () => {
